@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/codeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상병코드"
+        android:textSize="40dp"
+        android:fontFamily="@font/fontg"
+        android:paddingBottom="20dp"></TextView>
+    <EditText
+        android:id="@+id/codeEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginBottom="30dp"/>
+
+
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전송"
+            android:fontFamily="@font/fonta"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn"
+
+            />
+
+
+</LinearLayout>

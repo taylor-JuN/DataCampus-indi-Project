@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주상병과 부상병 결과"
+        android:fontFamily="@font/fontg"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:id="@+id/titleCode2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello world"
+        android:gravity="center"
+        />
+    <ImageView
+        android:id="@+id/barplot"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/barplotText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="aaa"
+            android:layout_weight="0.3"
+            android:fontFamily="@font/fonta"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/barplotText2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="bbb"
+            android:layout_weight="0.7"
+            android:fontFamily="@font/fonta"
+            android:textSize="20dp"
+            android:gravity="right"/>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/warnText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="본 자료는 표본코호드(M20)의 상병을 갖고 있는 \n 환자들의 부상병 현황입니다."
+            android:textColor="#FF0000"
+            android:gravity="center"/>
+    <TextView
+        android:id="@+id/warnText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자세한 사항은 의사와 상의하세요."
+        android:textColor="#FF0000"
+        android:gravity="center"/>
+</LinearLayout>

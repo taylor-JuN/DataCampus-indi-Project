@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과"
+        android:fontFamily="@font/fontg"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:id="@+id/titleCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello world"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한글명칭"
+            android:fontFamily="@font/fonta"
+            android:textColor="#4595D5"
+
+            />
+        <TextView
+            android:id="@+id/parsetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:gravity="center"
+            android:fontFamily="@font/fonta"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="영문명칭"
+            android:fontFamily="@font/fonta"
+            android:textColor="#4595D5"
+            />
+        <TextView
+            android:id="@+id/parsetext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:gravity="center"
+            android:fontFamily="@font/fonta"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn2"
+        android:id="@+id/barplotbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주상병과 부상병 정보 보기"
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn2"
+        android:id="@+id/nextbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주상병별 연관성 분석"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/searchbtn"
+            android:onClick="onButton1Clicked"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="한글명칭으로 검색"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn"
+            />
+        <Button
+            android:id="@+id/searchbtn2"
+            android:onClick="onButton2Clicked"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="영문명칭으로 검색"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
